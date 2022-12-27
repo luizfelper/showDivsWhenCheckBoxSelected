@@ -7,15 +7,17 @@ function App() {
     checkboxes: [
       {
         id: 1,
-        label: "children",
+        label: "Box RED",
         checked: false,
         backgroundColor: "red",
+        content: "Conteúdo do BOX RED",
       },
       {
         id: 2,
-        label: "number 2",
+        label: "box BLUE",
         checked: false,
         backgroundColor: "blue",
+        content: "Conteúdo do BOX BLUE",
       },
     ],
   });
@@ -63,7 +65,9 @@ function App() {
                   height: 200,
                   backgroundColor: `${checkbox.backgroundColor}`,
                 }}
-              ></div>
+              >
+                {checkbox.content}
+              </div>
             )
         )}
       </div>
